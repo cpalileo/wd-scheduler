@@ -18,21 +18,127 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <div>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+    <div class="container text-center">
+        <p id="currentDay"></p>
+        <p id="currentTime"></p>
+        </div>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
 
+    <div class="container">
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">9:00 AM</div>
+        <textarea id="text900" class="col-8 border border-primary form-control"> </textarea>
+        <button id="nineAmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">10:00 AM</div>
+        <textarea id="text1000" class="col-8 border border-primary form-control"></textarea>
+        <button id="tenAmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">11:00 AM</div>
+        <textarea id="text1100" class="col-8 border border-primary form-control"></textarea>
+        <button id="elevenAmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">12:00 PM</div>
+        <textarea id="text1200" class="col-8 border border-primary form-control"></textarea>
+        <button id="twelvePmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">1:00 PM</div>
+        <textarea id="text1300" class="col-8 border border-primary form-control"></textarea>
+        <button id="onePmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">2:00 PM</div>
+        <textarea id="text1400" class="col-8 border border-primary form-control"></textarea>
+        <button id="twoPmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">3:00 PM</div>
+        <textarea id="text1500" class="col-8 border border-primary form-control"></textarea>
+        <button id="threePmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">4:00 PM</div>
+        <textarea id="text1600" class="col-8 border border-primary form-control"></textarea>
+        <button id="fourPmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+      <div class="row text-center columnTime">
+        <div class="col border border-primary">5:00 PM</div>
+        <textarea id="text1700" class="col-8 border border-primary form-control"></textarea>
+        <button id="fivePmSave" class="col border border-primary">
+          Save
+        <span class="saved"></span>
+        </button>
+      </div>
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+
+    <script src="assets/js/script.js"> </script>
+    
+// Requirements (DUE 1/30 at 11:59PM)
+
+// Display current day at the top of the calendar
+// Use Moment.js
+
+// Display time blocks that represent business hours as the page is scrolled
+// 3 columns, left column is time, middle is task, right is save
+
+// Color code time blocks for items that occurred in the past (Grey), present (Red), future (Green)
+
+// When a block is clicked I can add to the event
+// center column
+
+// Incorporate a save button that saves info to localStorage
+// right column
+
+// Save date must persist even if page is refreshed
+    </body>
+
 </html>
